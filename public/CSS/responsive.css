@@ -1,0 +1,149 @@
+@media((max-width: 1140px)) {
+    body {
+        overflow-x: hidden;
+    }
+
+    
+    #flight {
+        position: absolute;
+        margin: auto;
+        width: 50vw;
+        align-items: center;
+        left: 22vw;
+        display: grid;
+        height: auto;
+    }
+
+    .booking_head {
+        margin-bottom: 0;
+    }
+
+    .search_list{
+        margin-top: 7%;
+    }
+    .row{
+        margin: 5px 3% 3% 4%;
+    }
+
+    .whq {
+        position: relative;
+        top: 65vh;
+        left: 8vw;
+
+    }
+
+    .wrapper .row .whq {
+        width: 80vw;
+        align-items: center;
+    }
+
+    .meida_whq {
+        width: 13%;
+    }
+}
+
+@media (max-width:992px) {
+    #flight {
+        position: absolute;
+        margin: auto;
+        width: 75vw;
+        align-items: center;
+        left: 13vw;
+        display: grid;
+        height: auto;
+    }
+
+    .input {
+        margin: 2%;
+    }
+
+    .whq {
+        position: relative;
+        top: 90vh;
+        left: 10vw;
+    }
+
+    .footer {
+        height: auto;
+        text-align: center;
+    }
+
+    .lineargd {
+        font-size: 20px;
+    }
+
+    .reason {
+        font-size: 12px;
+    }
+
+    .question {
+        font-size: 15px;
+    }
+
+    .answer {
+        font-size: 14px;
+    }
+
+
+}
+
+@media (max-width: 650px) {
+    .whq {
+        position: relative;
+        top: 68vh;
+        left: 10vw;
+    }
+}
+
+
+@media(max-width:600px) {
+    .booking_head {
+        font-size: 20px;
+    }
+}
+@media (max-width: 577px) {
+    .logo{
+     display: none;
+    }
+ }
+
+@media(max-width:400px) {
+    .input {
+        font-size: small;
+    }
+
+}
+
+@media(max-height: 700px){
+    .whq{
+        position: absolute;
+        top: 90vh;
+    }
+}
+@media(max-height: 600px){
+    .whq{
+        position: absolute;
+        top: 100vh;
+    }
+}
+
+@media(max-height: 580px){
+    .whq{
+        position: absolute;
+        top: 130vh;
+
+    }
+    
+}
+@media(max-height: 415px){
+    .whq{
+        position: absolute;
+        top: 170vh;
+    }
+}
+@media(max-height: 315px){
+    .whq{
+        position: absolute;
+        top: 200vh;
+    }
+}

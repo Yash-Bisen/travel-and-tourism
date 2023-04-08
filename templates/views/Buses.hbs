@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {{>header}}
+  <title>Buses Booking</title>
+
+</head>
+
+<body id="did">
+
+  <div class="navdiv">
+    <div class="container-fluid">
+
+      <nav class="navbar navbar-expand-lg navbar-dark ">
+        <a class="navbar-brand" href="/Destination_path">Voyage Venture</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/Destination_path">flights</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/Buses">Buses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="/Trains">Train</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="/Cabes">Cabes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/packages">Packages</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                My Account
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">My Booking </a></li>
+                <li><a class="dropdown-item" href="#">My Refund</a></li>
+
+                {{!-- <button type="button" class="btn btn-danger"><a href="/loginPage" class="loginbtns">
+                    Login</a></button>
+                <button type="button" class="btn btn-outline-danger"><a href="/register" class="loginbtns">Sign
+                    Up</a></button> --}}
+
+                <button type="button" class="btn btn-danger"><a href="/register" class="loginbtns">LOGOUT</a></button>
+
+
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">For Travel agent</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Support
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Talk to us</a></li>
+                <li><a class="dropdown-item" href="#">Contact us</a></li>
+                <li><a class="dropdown-item" href="#">Make a payment</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Complete package</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ">offers</a>
+            </li>
+
+          </ul>
+
+        </div>
+      </nav>
+    </div>
+  </div>
+
+
+
+  <section class="wrapper">
+    <div class="row">
+      <div class="col-lg-5 col-md-12" id="flight">
+
+        <h3 class="booking_head">
+          <span class="main-heading">Book Your Bus Journey From Here</span>
+        </h3>
+        <form action="/Buses" method="post">
+          <ul class="search_list">
+            <li class="row">
+              <div class="col-lg-5 col-sm-4 col-md-4">
+                <div class="depart">Depart From</div>
+                <input type="text" name="from" class="input" placeholder="Enter the departure city" required>
+              </div>
+              <div class="col-lg-1 col-sm-2 col-md-2 logo ">
+
+                <i class="fa-sharp fa-solid fa-arrow-right-arrow-left going_icon"></i>
+              </div>
+              <div class="col-lg-5 col-sm-4 col-md-4">
+                <div class="depart">Going to</div>
+                <input type="text" name="to" class="input" placeholder="Enter the Destination city" required>
+              </div>
+
+            </li>
+            <li class="row">
+              <div class="col-lg-5 col-sm-4 col-md-4 ">
+                <div class="depart">departure Date</div>
+                <input type="date" name="departuredate" class="input" placeholder="dd/mm/yyyy" required>
+              </div>
+              <div class="col-lg-1 col-sm-2 col-md-2 logo ">
+
+
+              </div>
+              <div class="col-lg-5 col-sm-4 col-md-4">
+                <div class="depart">
+                  No. of taravells
+                </div>
+                <input name="nooftraveller" class="input" type="text" required>
+              </div>
+            </li>
+          </ul>
+          <div>
+            <input type="submit" class="btn btn-danger" value="Search Buses">
+          </div>
+        </form>
+      </div>
+      <div class="col-lg-5 col-md-12 whq">
+        <div class="media_whq">
+          <p class="lineargd"> Why Make a Bus Booking With Voyage Venture?</p>
+
+          <p class="reason">7 Brilliant reasons Voyage Venture should be your one-stop-shop!</p>
+
+          <h5 class="question">Book Flights, Hotels, Trains, Buses, Cruise and Holiday Packages</h5>
+
+          <p class="answer">On VoyageVenture.com, you can tailor your trip from end-to-end by scouring suitable flights
+            and
+            making your flight booking before proceeding with your hotel bookings. Voyage Venture’s vast hotel
+            repository will
+            see you through this process seamlessly. Any intervening journey can be conveniently planned by searching up
+            relevant train connectivity and making an IRCTC ticket booking. Look up well-researched holiday packages,
+            sift through cruise packages and finalise your entire trip on just one platform.</p>
+
+          <h5 class="question">Look for flights and hotels</h5>
+
+          <p class="answer">Search for exclusive deals on flights and hotels. Find cheap air tickets to any destination
+            you like. Choose from its vast repository of hotels - from budget, mid-range, five-star to niche boutique
+            properties. Widen your choices with options like flexi stay, pay directly at hotel, and guaranteed standard
+            amenities. Extremely efficient and easy.</p>
+
+          <h5 class="question">Get a secure flight booking</h5>
+
+          <p class="answer">Enjoy cancellation protection on domestic flights. Benefit from fare drop protection, same
+            day cancellation protection, hold now - pay later, on international flight bookings. Great filters,
+            fantastic navigation.</p>
+
+          <h5 class="question">A holiday to suit every pocket</h5>
+
+          <p class="answer">Plan a honeymoon, a weekend getaway, or an adventure activity. Select from an array of
+            domestic and international destinations well-suited to every spectrum of traveller. Be it flights, hotels,
+            pre-planned itinerary, transport upon arrival/departure or sightseeing - you are covered. Attractive
+            pricing, well-researched itineraries.</p>
+
+          <h5 class="question">Find the best combination, tailor your trip</h5>
+
+          <p class="answer">Your one-stop-shop to get the best combination of flights, hotels, activities, package
+            holidays along with train and bus tickets. Voyage Venture's powerful search engine lets you zero in on with
+            precision.</p>
+
+          <h5 class="question">No need to queue up at the ticketing window of a monument</h5>
+
+          <p class="answer">Buy tickets to all ASI-protected monuments online. Its hassle-free and saves you from
+            waiting in a queue under a scorching sun. Imagine gaining a breezy entry into the Taj Mahal!</p>
+
+          <h5 class="question">New deal every season</h5>
+
+          <p class="answer">The onset of the festive season, an upcoming long weekend or a gazetted holiday, expect an
+            attractive deal on flights, hotels and holidays coming your way. From cashback offers to promo code
+            discounts, you are in for a hot deal.</p>
+
+          <h5 class="question">Voyage Venture's burgeoning customer base</h5>
+
+          <p class="answer">Our expert customer service team supports you before, during and after the booking. The
+            several million customers since 2006 are proof.</p>
+        </div>
+        <div class="footer">
+          <h5 class="footer_head">
+            Company Useful Links
+          </h5>
+          <a href="#" class="footer_link">Company Information</a>
+          <a href="#" class="footer_link">Investor Relation</a>
+          <a href="#" class="footer_link">Carrer</a>
+          <br>
+          <a href="#" class="footer_link">Costomer Relation</a>
+          <a href="#" class="footer_link">product offering</a>
+          <a href="#" class="footer_link">more</a>
+
+          <br>
+          <br>
+          <div class="row">
+            <div class="col-lg-6 col-md6 ">
+              <h5 class="footer_head">Security & Payments</h5>
+              <i class="fa-brands fa-google-pay footer_logo"></i>
+              <i class="fa-brands fa-amazon-pay footer_logo"></i>
+              <i class="fa fa-cc-visa footer_logo" aria-hidden="true"></i>
+              <i class="fa fa-cc-mastercard footer_logo" aria-hidden="true"></i>
+
+            </div>
+          
+            <div class="col-lg-6 col-md6 ">
+              <h5 class=" footer_head">Keep In Touch</h5>
+              <i class="fa-brands fa-facebook footer_logo"></i>
+              <i class="fa-brands fa-twitter footer_logo"></i>
+              <i class="fa-brands fa-instagram footer_logo"></i>
+
+              <i class="fa-brands fa-linkedin footer_logo"></i>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+  </section>
+
+</body>
+
+</html>

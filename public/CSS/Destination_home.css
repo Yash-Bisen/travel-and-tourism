@@ -1,0 +1,263 @@
+#did{
+    background-color: #f4f4f4;
+}
+body{
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.navdiv{
+    margin-bottom: 20px;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    
+    
+}
+.navbar-brand{
+    padding: 1% 4%;
+   
+}
+.navbar{
+    background-image: linear-gradient(to right,red,rgb(189, 50, 50),rgb(75, 39, 39));
+    z-index: 2;
+}
+
+.wrapper{
+    background-color: #f4f4f4;
+    /* position: relative; */
+}
+
+.main-heading{
+    margin-bottom: 2rem;
+}
+#flight{
+    width: 40%;
+    height: 40rem;
+    /* margin: 5% 4% ; */
+    z-index: 1;
+    padding: 3% 2%; 
+    background-color: #fff;  
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: rgb(230, 225, 225);
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    /* font-weight: 700; */ 
+    position: fixed;
+    left: 3rem;
+    top: 5rem;
+}
+.booking_head{
+    font-weight: 600;
+    margin-bottom: 4rem ;
+}
+.bookingbox{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0.5rem 1rem 2rem 1rem;  
+}
+
+ul,li{
+    list-style-type: none;
+}
+.search_list{
+    padding-left: 0;
+}
+.depart{
+    color: gray;
+    margin-top: 3%;
+}
+.icon{
+    color: rgb(216, 15, 15);
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.loginbtns{
+    color: black;
+    text-decoration: none;
+}
+
+.loginbtns:hover{
+    color: rgb(233, 214, 214);
+   
+}
+
+.btn-danger{
+    
+    margin-left: 32px;
+}
+
+.logo{
+    height: 1rem;
+    width: 1rem;
+    color: black;
+}
+.input{
+    border-radius: 2px;
+    border-top: 0 ;
+    border-left: 0;
+    border-right: 0;
+    border-color: gray;
+    margin: 7%;   
+}
+
+.whq{
+    /* width: 40%; */
+    position: absolute;
+    right: 2.5rem;
+    top: 5rem;
+     background-color: #fff;
+     
+}  
+ .lineargd{
+    
+    font-size: 32px;
+   background: linear-gradient(to right,rgb(232, 44, 44),rgb(120, 35, 35));
+} 
+.reason{
+    font-weight: 700;
+}
+.question {
+    
+    background: -webkit-linear-gradient(left,red,rgb(117, 32, 32));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+.depart{
+    font-weight: 800;
+}
+
+
+  .footer
+  {
+    width: 100%;
+    position: absolute;
+    right: 0.16rem;
+    background-color: #fff;
+    height: 15rem;
+    margin-top: 2rem;
+
+  }
+  .row{
+    padding-left: 11px;
+  }
+  .footer_head{
+    color: #a9a3a3;
+    font-weight: 600;
+    padding: 10px;
+  }
+  .footer_link{
+    font-size: small;
+    color:rgb(70, 65, 65);
+    text-decoration: none;
+    padding: 1.5rem;
+  }
+
+  .footer_logo{
+    font-size: 30px;
+    padding: 4px;
+  }
+
+  
+  .radiobutton{
+    accent-color: rgb(226, 62, 62);
+    margin: 10px 5px 15px 40px;
+}
+    
+ 
+
+  .cab_form{
+    margin-bottom: 20px;
+  }
+
+  /* Cabes Booking Section */
+  
+.look_box{
+    height: 35vh;
+    width: 85vw;
+    align-items: centre;
+    background-color: rgb(244, 236, 236);
+    position: relative;
+    margin: 5% auto;
+
+   
+}
+
+.vehical_image_div{
+    width: 20vw;
+    height: 35vh;
+}
+
+.vehical_image{
+    
+    height: 30vh;
+    width: 20vw;
+
+}
+
+.vehical_name{
+    position: absolute;
+    left: 21vw;
+    top: 0;
+    width: 20vw;
+    height: 35vh;
+
+}
+.distance{
+    position: absolute;
+    top: 0;
+    left: 43vw;
+    width: 20vw ;
+    height: 35vh;
+}
+.fare_details{
+    position: absolute;
+    left: 64vw;
+    top: 0;
+    width: 20vw;
+    height: 35vh;
+}
+.bodyform{
+    background-color: rgb(184, 231, 168);
+    color: rgb(96, 93, 104);
+    padding: 10%;
+}
+.circleradius{
+    border: 2px solid ;
+    border-radius: 0px;
+    border-top: 0 ;
+    border-left: 0;
+    border-right: 0;
+    border-color: gray;
+    margin: 7%;  
+}
+
+.bookingheading{
+    text-align: center;
+}
+.submitbutton{
+   margin: 5% 32%;
+}
+.vehicalname{
+    margin-top: 3%;
+}
+
+.Bookingform{
+    align-items: center;
+    height: 70%;
+    width: 60vw;
+    margin: 5% auto;
+    background-color: rgb(218, 237, 218);
+    padding: 3% ;
+}
+.numtraveler{
+    margin-bottom: 10px;
+}
+.boxpadding{
+    margin-bottom: 10px;
+}

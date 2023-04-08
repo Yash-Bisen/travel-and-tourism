@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>header}}
+    <title>Book your packages</title>
+
+</head>
+
+<body class="bodyform">
+    <div class="bookingheading">
+        <h2> Fill your details for booking</h2>
+    </div>
+
+
+    <div class="Bookingform">
+
+        <form action="/package_booking" method="post">
+            <div class="numtraveler">
+                <label for="tuser">
+                    <h6>No of Traveller:</h6>
+                </label>
+                <input type="text" id="numberoftraveller" maxlength="1" name="numtaveler"
+                    placeholder=" number of traveler">
+                <input type="button" class="btn btn-light" id="btn1" value="Enter">
+            </div>
+
+            <div>
+
+                <div>
+                    <div id="travelname">
+                        <h5 class="travhead">
+                            Traveller1
+                        </h5>
+
+                        <input type="text" class="boxpadding" name="title" placeholder="Mr/Ms/Miss">
+                        <input type="text" class="boxpadding" name="fullname" placeholder="Full Name">
+                        <input type="Number" class="boxpadding" name="age" placeholder="Age">
+                    </div>
+                </div>
+                <div class="ContactDetails">
+                    <div class="contact">
+                        <h6>Email</h6>
+                        <input type="email" class="boxpadding" name="email " placeholder="Enter your mail"><br>
+                        <div class="contact">
+                            <h6>Mobile Number</h6>
+                            <input type="text" class="boxpadding" name="mobilenum" pattern="[0-9]{10}"
+                                placeholder="Enter your mobile Number">
+                        </div>
+                    </div>
+                    <div class="vehicalname">
+                        <h6>Travelling Location </h6><br>
+                        <input type="text" class="boxpadding" name="Location" placeholder="exe. spain"><br>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="submitbutton">
+                    <input class="btn btn-danger" type="submit" value="PROCEED">
+                </div>
+
+        </form>
+    </div>
+
+    <script>
+        const txt1 = document.getElementById('numberoftraveller');
+        const btn1 = document.getElementById('btn1');
+
+        function fun1() {
+            const value = txt1.value;
+
+            document.querySelector('.travelname')
+            let htmlStringd = `<h5 class="travhead">
+    Traveller1
+</h5> <input type="dropdown"class="boxpadding" name="title" placeholder="Title">
+<input type="text" class="boxpadding" name="fullname" placeholder="Full Name" >
+<input type="dropdown" class="boxpadding" name="age" placeholder="Age">`
+            for (var i = 2; i <= value; i++) {
+                htmlStringd += `<h5 class="travhead">
+        Traveller${i}
+    </h5> <input type="dropdown" class="boxpadding" name="title" placeholder="Title">
+    <input type="text" class="boxpadding" name="fullname" placeholder="Full Name" >
+    <input type="dropdown" class="boxpadding" name="age" placeholder="Age">`
+            }
+            travelname.innerHTML = htmlStringd;
+        }
+
+        btn1.addEventListener('click', fun1);
+
+    </script>
+
+</body>
+
+</html>

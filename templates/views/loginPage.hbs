@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN TO DESTINATION PATH</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/login.css">
+
+
+    <!-- Bootstrap CSS and JAVASCRIPT -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <!-- font link -->
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+
+    <div class="maindiv" id="loginpage">
+
+        <img src="images/travel.jpg" alt="" class="loginimage">
+        <h6 class="first">traveller</h6>
+        <h1 class="Second">Time to Travel The World</h1>
+        <p class="third">Travel makes ones modest,you see what a small place you occoupy in the world.</p>
+
+        <form action="/loginPage" class="form" method="POST">
+            <h4 class="loginhead">Login to Your Account</h4>
+
+            <p> <input type="email" name="email" placeholder="Enter your email" class="logininput" required></p>
+
+            <p><input type="password" name="password" placeholder="Enter your password" class="logininput" required></p>
+
+            <a class="forgotpass" href="#">Forgot password?</a>
+
+            <p class="rememberme">
+            <input type="checkbox" class="checkbox"> Remember me</p>
+
+            <p>
+                <button type="submit" value="LOGIN" name="submit" class="loginbtn" >LOGIN</button>
+            </p>
+            <p class="loginlink"> Don't have an account?
+            </p>
+            <p>
+                <button  type="button"  class="loginbtn" ><a href="/register" id="signupbtn" class="loginbtnlink">Signup</a>
+                    </button>
+            </p>
+        
+            
+        </form>
+    </div>
+</body>
+</html>
