@@ -45,10 +45,12 @@ app.get("/register",(req,res)=>{
     res.render("register")
 });
 
-
 app.get("/Destination_path",(req,res)=>{
-    res.render("Destination_path")
+    res.render("Destination_path",{
+        userName: `${req.body.name}`
+    });
 });
+
 app.get("/Buses",(req,res)=>{
     res.render("Buses")
 });
@@ -328,6 +330,12 @@ const createToken = async() =>{
 
     const userVer = await jwt.verify(token,"123456789123456789123456789123456789");
 }
+
+app.get("*",(req,res)=>{
+    res.render("404",{  
+        errorcomment: "OPPs!!! Page Not Found "
+    });
+});
 
 app.listen(port,()=>{
     

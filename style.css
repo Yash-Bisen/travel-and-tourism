@@ -1,0 +1,12 @@
+.parent{
+    background-color: red;
+    height: 50vh;
+    width: 50vw;
+    text-align: center;
+    /* padding: auto; */ 
+    display: flex;
+}
+
+form{
+    margin: auto;
+}

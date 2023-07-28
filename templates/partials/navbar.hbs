@@ -1,6 +1,6 @@
 
-    <div class="navdiv">
-    <div class="container-fluid">
+<div class="navdiv">
+  <div class="container-fluid">
 
   <nav class="navbar navbar-expand-lg navbar-dark ">
     <a class="navbar-brand" href="/Destination_path">Voyage Venture</a>
@@ -11,7 +11,7 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">flights</a>
+              <a class="nav-link active" aria-current="page" href="/">flights</a>
             </li>
            
             <li class="nav-item">
@@ -24,20 +24,19 @@
               <a class="nav-link" href="/Cabes">Cabes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Packages</a>
+              <a class="nav-link" href="/packages">Packages</a>
             </li>
 
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
-                My Account
+               {{userName}}
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">My Booking </a></li>
                 <li><a class="dropdown-item" href="#">My Refund</a></li>
 
-                <button type="button" class="btn btn-danger" ><a href="/loginPage" class="loginbtns"> Login</a></button>
-                <button type="button" class="btn btn-outline-danger"><a href="/register" class="loginbtns">Sign Up</a></button>
+               <button type="button" class="btn btn-danger"><a href="/register" class="loginbtns">LOGOUT</a></button>
 
                 <li>
                   <hr class="dropdown-divider">
@@ -69,4 +68,4 @@
     </div>
   </nav>
 </div>
-  </div> 
+</div> 

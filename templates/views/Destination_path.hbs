@@ -11,8 +11,8 @@
 <body id="did">
 
 
-
-  <div class="navdiv">
+{{>navbar}}
+  {{!-- <div class="navdiv">
     <div class="container-fluid">
 
       <nav class="navbar navbar-expand-lg navbar-dark ">
@@ -37,22 +37,18 @@
               <a class="nav-link" href="/Cabes">Cabes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/packages">Packages</a>
+              <a class="nav-link" href="/packages">Package</a>
             </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                My Account
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {{username}}
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">My Booking </a></li>
                 <li><a class="dropdown-item" href="#">My Refund</a></li>
 
-                {{!-- <button type="button" class="btn btn-danger"><a href="/loginPage" class="loginbtns">
-                    Login</a></button>
-                <button type="button" class="btn btn-outline-danger"><a href="/register" class="loginbtns">Sign
-                    Up</a></button> --}}
+    
 
                 <button type="button" class="btn btn-danger"><a href="/register" class="loginbtns">LOGOUT</a></button>
 
@@ -87,7 +83,7 @@
         </div>
       </nav>
     </div>
-  </div>
+  </div> --}}
 
 
   <section class="wrapper">
